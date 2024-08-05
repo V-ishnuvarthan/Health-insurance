@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>HTML + CSS</title>
+    <title>Health Insurance</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -123,43 +123,69 @@
       </nav>
     </header>
     <main>
-      <div class="signupModal">
-        <div class="modal-content">
-            <span class="close">×</span>
-            <form id="signupForm">
-                <label for="title">Title:</label>
-                <select id="title" name="title">
+      <div class="modal">
+        <div class="modal__content">
+            <span class="modal__close">×</span>
+            <form class="modal__form">
+                <h2 class="modal__title">Enter the below details to login.</h2>
+                <div class="modal__fieldSet">
+                  <div class="modal__field">
+                      <input type="text" id="username" placeholder="Email" class="modal__input" required>
+                  </div>
+                  <div class="modal__field">
+                      <input type="password" id="password" placeholder="Password" class="modal__input" required>
+                      <a href="#" class="modal__input-forgotPassword">Forgot Password</a>
+                  </div>
+                </div>
+                <div class="modal__login">
+                  <button type="submit" class="modal__login-button">Login</button>
+                </div>
+                <div class="modal__register">Don't have an account?<a href="#" class="modal__register-link"> Register Now</a></div>
+            </form>
+        </div>
+      </div>
+      <div class="modal--signup">
+        <form class="form form--signup">
+          <span class="form__close">×</span>
+          <h2 class="form__title">Signup</h2>
+          <div class="form__fields">
+            <div class="form__field">
+              <div class="form__label--title">
+                <label for="title" class="form__label">Title</label>
+                <select id="title" name="title" class="form__select">
                     <option value="Mr">Mr</option>
                     <option value="Ms">Ms</option>
                     <option value="Mrs">Mrs</option>
                     <option value="Dr">Dr</option>
-                </select><br><br>
-
-                <label for="fullname">Full Name:</label>
-                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name"><br><br>
-
-                <label for="email">Email ID:</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
-
-                <label for="mobile">Mobile No:</label>
-                <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number"><br><br>
-
-                <label for="dob">Date of Birth:</label>
-                <input type="date" id="dob" name="dob"><br><br>
-
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" placeholder="Enter your password"><br><br>
-
-                <label for="confirmPassword">Confirm Password:</label>
-                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password"><br><br>
-
-                <input type="checkbox" id="terms" name="terms">
-                <label for="terms">I hereby acknowledge and accept the terms and conditions</label><br><br>
-
-                <button type="submit">Register</button>
-            </form>
-            <p>Already have an account? <a href="#">Login Now</a></p>
-        </div>
+                </select>
+              </div>
+              <input type="text" id="fullname" name="fullname" style="min-width: 165px;" placeholder="fullname" required class="form__input"/>
+            </div>
+            <div class="form__field">
+              <input type="email" id="email" name="email" placeholder="email" required class="form__input"/>
+            </div>
+            <div class="form__field">
+              <input type="tel" id="mobile" name="mobile" placeholder="mobile" required class="form__input"/>
+            </div>
+            <div class="form__field">
+              <input type="date" id="dob" name="dob" placeholder="Date of Birth" required class="form__input"/>
+            </div>
+            <div class="form__field">
+              <input type="password" id="password" name="password" placeholder="Password" required class="form__input"/>
+            </div>
+            <div class="form__field">
+              <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required class="form__input"/>
+            </div>
+          </div>
+          <div class="form__checkbox">
+            <input type="checkbox" id="terms" name="terms" required class="form__checkbox-input"/>
+            <label for="terms" class="form__checkbox-label">I hereby acknowledge and accept the <a href="#"> terms and conditions</a></label>
+          </div>
+          <div class="modal__login">
+            <button type="submit" class="form__submit">Register</button>
+          </div>
+          <p class="form__login">Already have an account? <a href="#" class="form__login-link">Login Now</a></p>
+        </form>
       </div>
       <div class="insurance-banner">
         <div class="insurance-banner__content">
@@ -177,7 +203,7 @@
           </div>
           <div class="insurance-banner__plan-image"></div>
         </div>
-      </div>   
+      </div>
       <div class="tiles">
         <div class="tile tile--fraud">
           <div class="tile__content">
@@ -202,7 +228,7 @@
             <p class="tile__description">Drop a message and we will help you quickly.</p>
           </div>
         </div>
-      </div>      
+      </div>
       <!-- Block component -->
       <div class="pb-advantage">
         <!-- Element: title -->
@@ -289,7 +315,7 @@
             <p class="testimonial__text">Thanks for correction done in time and really appreciated. If GOOD TO HAVE POLICYBAZAAR. LIFE IS EASY WITH YOU.</p>
           </article>
         </div>
-      </section>      
+      </section> 
     </main>
     <footer>
       <div class="footer-container">
