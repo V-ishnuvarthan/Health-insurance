@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="header__nav-wrapper">
+        <div class="header__nav-container-top">
+          <div class="header__nav-container-logo">
+            <div class="header__nav-logo">
+              <a href="#" class="header__nav-logo-link">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="82"
+                  height="40"
+                  fill="none"
+                  viewBox="0 0 82 40"
+                >
+                  <path
+                    fill="#FFD43D"
+                    d="M73.365 19.71c0 2.904-2.241 5.31-5.27 5.31-3.03 0-5.228-2.406-5.228-5.31 0-2.905 2.199-5.312 5.228-5.312s5.27 2.407 5.27 5.311Z"
+                  ></path>
+                  <path
+                    fill="#FF0C81"
+                    d="M48.764 19.544c0 2.946-2.323 5.145-5.27 5.145-2.904 0-5.227-2.2-5.227-5.145 0-2.947 2.323-5.104 5.228-5.104 2.946 0 5.27 2.158 5.27 5.104Z"
+                  ></path>
+                  <path
+                    fill="#11EEFC"
+                    d="M20.074 25.02c3.029 0 5.27-2.406 5.27-5.31 0-2.905-2.241-5.312-5.27-5.312-3.03 0-5.228 2.407-5.228 5.311 0 2.905 2.199 5.312 5.228 5.312Z"
+                  ></path>
+                  <path
+                    fill="#171A26"
+                    d="M68.095 30.54c-6.307 0-11.12-4.897-11.12-10.872 0-5.934 4.855-10.83 11.12-10.83 6.349 0 11.162 4.938 11.162 10.83 0 5.975-4.855 10.871-11.162 10.871Zm0-5.52c3.03 0 5.27-2.406 5.27-5.31 0-2.905-2.24-5.312-5.27-5.312-3.029 0-5.228 2.407-5.228 5.311 0 2.905 2.199 5.312 5.228 5.312ZM43.08 40c-4.813 0-8.506-2.116-10.373-5.934l4.896-2.655c.913 1.784 2.614 3.195 5.394 3.195 3.486 0 5.85-2.448 5.85-6.473v-.374c-1.12 1.411-3.111 2.49-6.016 2.49-5.768 0-10.373-4.481-10.373-10.581 0-5.934 4.813-10.788 11.12-10.788 6.431 0 11.162 4.605 11.162 10.788v8.299C54.74 35.27 49.76 40 43.08 40Zm.415-15.311c2.946 0 5.27-2.2 5.27-5.145 0-2.947-2.324-5.104-5.27-5.104-2.905 0-5.228 2.158-5.228 5.104s2.323 5.145 5.228 5.145ZM20.074 30.54c-6.307 0-11.12-4.897-11.12-10.872 0-5.934 4.854-10.83 11.12-10.83 6.348 0 11.162 4.938 11.162 10.83 0 5.975-4.855 10.871-11.162 10.871Zm0-5.52c3.029 0 5.27-2.406 5.27-5.31 0-2.905-2.241-5.312-5.27-5.312-3.03 0-5.228 2.407-5.228 5.311 0 2.905 2.199 5.312 5.228 5.312ZM0 0h5.892v30H0V0ZM82 6.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="header__nav-menuwrapper">
+            <ul class="header__nav-megamenu">
+              <li
+                class="header__nav-megamenu-label"
+                onmouseover="showChildMenu(this)"
+                onmouseout="hideChildMenu(this)"
+              >
+                <div class="megamenu-nav__link-wrapper">
+                  <a class="megamenu-nav__link" href="#">
+                    <span>Term Insurance</span>
+                  </a>
+                </div>
+                <ul class="header__nav-submenu">
+                  <li>
+                    <a href="#" class="header__nav-submenu-label">
+                      <span>Term Insurance Plan1</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="header__nav-submenu-label">
+                      <span>Term Insurance Plan2</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="header__nav-submenu-label">
+                      <span>Term Insurance Plan3</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header__nav-megamenu-label">
+                <div class="megamenu-nav__link-wrapper">
+                  <a class="megamenu-nav__link" href="#">
+                    <span>Term Insurance1</span>
+                  </a>
+                </div>
+              </li>
+              <li class="header__nav-megamenu-label">
+                <div class="megamenu-nav__link-wrapper">
+                  <a class="megamenu-nav__link" href="#">
+                    <span>Term Insurance2</span>
+                  </a>
+                </div>
+              </li>
+              <li class="header__nav-megamenu-label signInlink">
+                <a href="#" class="megamenu-nav__link signupBtn">Sign In</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="header__nav-container-bottom">
+          <ul class="header__nav-container-bottom-wrapper">
+            <li class="header__nav-container-bottomMegamenu-label">
+              <a href="" class="header__nav-container-bottomMegamenu__link"
+                >Properties</a
+              >
+            </li>
+            <li class="header__nav-container-bottomMegamenu-label">
+              <a href="" class="header__nav-container-bottomMegamenu__link"
+                >Properties</a
+              >
+            </li>
+            <li class="header__nav-container-bottomMegamenu-label">
+              <a href="" class="header__nav-container-bottomMegamenu__link"
+                >Properties</a
+              >
+            </li>
+            <li class="header__nav-container-bottomMegamenu-label">
+              <a href="" class="header__nav-container-bottomMegamenu__link"
+                >Properties</a
+              >
+            </li>
+            <li class="header__nav-container-bottomMegamenu-label">
+              <a href="" class="header__nav-container-bottomMegamenu__link"
+                >Properties</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="signupModal">
+        <div class="modal-content">
+            <span class="close">×</span>
+            <form id="signupForm">
+                <label for="title">Title:</label>
+                <select id="title" name="title">
+                    <option value="Mr">Mr</option>
+                    <option value="Ms">Ms</option>
+                    <option value="Mrs">Mrs</option>
+                    <option value="Dr">Dr</option>
+                </select><br><br>
+
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name"><br><br>
+
+                <label for="email">Email ID:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+                <label for="mobile">Mobile No:</label>
+                <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number"><br><br>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob"><br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password"><br><br>
+
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password"><br><br>
+
+                <input type="checkbox" id="terms" name="terms">
+                <label for="terms">I hereby acknowledge and accept the terms and conditions</label><br><br>
+
+                <button type="submit">Register</button>
+            </form>
+            <p>Already have an account? <a href="#">Login Now</a></p>
+        </div>
+      </div>
+      <div class="insurance-banner">
+        <div class="insurance-banner__content">
+          <h2 class="insurance-banner__title">Let's find you <br> the <strong>Best Insurance</strong></h2>
+          <div class="insurance-banner__subtitle">
+          <p class="insurance-banner__subtitle--blue">50+ insurers with one of the best prices</p>
+          <p class="insurance-banner__subtitle--orange" style="color: orange;">Quick, easy &amp; <br>hassle-free</p>
+        </div>
+        </div>
+        <div class="insurance-banner__plan">
+          <div class="insurance-banner__plan-content">
+            <h3 class="insurance-banner__plan-title">$1 Core</h3>
+            <p class="insurance-banner__plan-price">Term plan starting <br> @ ₹479/month</p>
+            <a href="#" class="insurance-banner__plan-button">view plans</a>
+          </div>
+          <div class="insurance-banner__plan-image"></div>
+        </div>
+      </div>   
+      <div class="tiles">
+        <div class="tile tile--fraud">
+          <div class="tile__content">
+            <h3 class="tile__title">Fraud Detection Policy</h3>
+            <a href="#" class="tile__link">View details</a>
+          </div>
+          <div class="tile__icon tile__icon--shield"></div>
+        </div>
+      
+        <div class="tile tile--assistance">
+          <div class="tile__icon tile__icon--assistance"></div>
+          <div class="tile__content">
+            <h3 class="tile__title">Our claims assistance experts are available 24x7!</h3>
+            <p class="tile__description">Assistance available for Health & Motor insurance</p>
+          </div>
+        </div>
+      
+        <div class="tile tile--insurance">
+          <div class="tile__icon tile__icon--chat"></div>
+          <div class="tile__content">
+            <h3 class="tile__title">Got a question about insurance?</h3>
+            <p class="tile__description">Drop a message and we will help you quickly.</p>
+          </div>
+        </div>
+      </div>      
+      <!-- Block component -->
+      <div class="pb-advantage">
+        <!-- Element: title -->
+        <h2 class="pb-advantage__title">PB Advantage</h2>
+        <!-- Element: description -->
+        <p class="pb-advantage__description">
+          When you buy insurance from us, you get more than just financial safety. You also get: our promise of simplifying complex insurance terms and conditions, quick stress-free claims, instant quotes from top insurers and being present for you in the toughest of times.
+        </p>
+        
+        <!-- Block: services -->
+        <div class="pb-advantage__services">
+          <!-- Element: service item -->
+          <div class="pb-advantage__service-item">
+            <div class="pb-advantage__service-icon pb-advantage__service-icon--prices"></div>
+            <h3 class="pb-advantage__service-title">One of the best Prices</h3>
+            <p class="pb-advantage__service-description">Guaranteed</p>
+          </div>
+
+          <div class="pb-advantage__service-item">
+            <div class="pb-advantage__service-icon pb-advantage__service-icon--advice"></div>
+            <h3 class="pb-advantage__service-title">Unbiased Advice</h3>
+            <p class="pb-advantage__service-description">Keeping customers first</p>
+          </div>
+
+          <div class="pb-advantage__service-item">
+            <div class="pb-advantage__service-icon pb-advantage__service-icon--reliable"></div>
+            <h3 class="pb-advantage__service-title">100% Reliable</h3>
+            <p class="pb-advantage__service-description">Regulated by IRDAI</p>
+          </div>
+
+          <div class="pb-advantage__service-item">
+            <div class="pb-advantage__service-icon pb-advantage__service-icon--support"></div>
+            <h3 class="pb-advantage__service-title">Claims Support</h3>
+            <p class="pb-advantage__service-description">Made stress-free</p>
+          </div>
+
+          <div class="pb-advantage__service-item">
+            <div class="pb-advantage__service-icon pb-advantage__service-icon--help"></div>
+            <h3 class="pb-advantage__service-title">Happy to Help</h3>
+            <p class="pb-advantage__service-description">Every day of the week</p>
+          </div>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="card card--green">
+          <div class="card__icon card__icon--investment"></div>
+          <div class="card__content">
+            <h3 class="card__title">Invest ₹10K and Get ₹1 Crore return*</h3>
+            <button class="card__button">Invest Now</button>
+          </div>
+        </div>
+      
+        <div class="card card--purple">
+          <div class="card__icon card__icon--health"></div>
+          <div class="card__content">
+            <h3 class="card__title">1 Crore health coverage now cheaper than 5 lacs</h3>
+          </div>
+        </div>
+      
+        <div class="card card--pink">
+          <div class="card__icon card__icon--sip"></div>
+          <div class="card__content">
+            <h3 class="card__title">Make investment simple with our SIP calculator</h3>
+            <button class="card__button">Calculate now</button>
+          </div>
+        </div>
+      </div>
+      <section class="testimonials">
+        <h2 class="testimonials__title">What Our Customers <br> Are Saying <span class="testimonials__title--underline"></span></h2>
+        <div class="testimonials__container">
+          <article class="testimonial">
+            <p class="testimonial__name">Neha Jain</p>
+            <p class="testimonial__quote">"</p>
+            <p class="testimonial__text">You are doing a great job. Proud to be a customer of Policybazaar.</p>
+          </article>
+          <article class="testimonial">
+            <p class="testimonial__name">Rashmi Sirsath</p>
+            <p class="testimonial__quote">"</p>
+            <p class="testimonial__text">I would like to thank the webelle www.policybazaar.com because of which I could get a good policy.</p>
+          </article>
+          <article class="testimonial">
+            <p class="testimonial__name">Bhaaskar Lokhande</p>
+            <p class="testimonial__quote">"</p>
+            <p class="testimonial__text">Thanks for correction done in time and really appreciated. If GOOD TO HAVE POLICYBAZAAR. LIFE IS EASY WITH YOU.</p>
+          </article>
+        </div>
+      </section>      
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-container__links-wrapper">
+          <div class="footer-container__link-section">
+            <p class="heading">Insurance</p>
+            <ul>
+              <li><a href="#">General Insurance</a></li>
+              <li><a href="#">Life Insurance</a></li>
+              <li><a href="#">Terms Insurance</a></li>
+              <li><a href="#">Health Insurance</a></li>
+              <li><a href="#">Other Insurance</a></li>
+            </ul>
+          </div>
+          <div class="footer-container__link-section">
+            <p class="heading">Calculators</p>
+            <ul>
+              <li><a href="#">IncomeTax Calculator</a></li>
+              <li><a href="#">Life Insurance Calculator</a></li>
+              <li><a href="#">Health Insurance Calculator</a></li>
+              <li><a href="#">NPS Calculator</a></li>
+              <li><a href="#">SIP Calculator</a></li>
+            </ul>
+          </div>
+          <div class="footer-container__link-section">
+            <p class="heading">Resources</p>
+            <ul>
+              <li><a href="#">Articles</a></li>
+              <li><a href="#">Customer Review</a></li>
+              <li><a href="#">News Room</a></li>
+              <li><a href="#">Awards</a></li>
+              <li><a href="#">PB Life</a></li>
+            </ul>
+          </div>
+          <div class="footer-container__link-section">
+            <p class="heading">Company</p>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">SiteMap</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-container__disclaimer-section">
+          <p class="footer-disclaimer">
+            Visitors are hereby informed that their information submitted on the
+            website may be shared with insurers.Product information is authentic
+            and solely based on the information received from the insurers.
+          </p>
+          <p class="footer-disclaimer">
+            © Copyright 2008-2024 All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
