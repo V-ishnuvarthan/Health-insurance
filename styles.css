@@ -1,5 +1,8 @@
 body {
+    font-family: Muli, sans-serif;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 main {
@@ -238,12 +241,7 @@ footer {
 }
 
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 button {
     padding: 10px 20px;
@@ -486,118 +484,6 @@ button {
     margin-top: 10px;
 }
 
-
-/* .signupModal {
-    display: none;
-    position: fixed;
-    z-index: 11;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4);
-}
-
-.modal-content {
-    background-color: #fefefe;
-    margin: 10%;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    box-sizing: border-box;
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="date"],
-input[type="password"],
-select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    box-sizing: border-box;
-}
-
-input[type="checkbox"] {
-    margin-right: 10px;
-}
-
-button[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-button[type="submit"]:hover {
-    background-color: #45a049;
-}
-
-p {
-    text-align: center;
-    margin-top: 20px;
-}
-
-p a {
-    color: #4CAF50;
-    text-decoration: none;
-}
-
-p a:hover {
-    text-decoration: underline;
-} */
-
-/* Media Queries for larger screens */
-
-/* @media (min-width: 600px) {
-    button {
-        width: auto;
-    }
-
-    .modal-content {
-        width: 70%;
-    }
-}
-
-@media (min-width: 768px) {
-    .modal-content {
-        width: 50%;
-    }
-
-    p {
-        margin-top: 10px;
-    }
-}
-
-@media (min-width: 1024px) {
-    .modal-content {
-        width: 30%;
-    }
-} */
-
 /*Insurance banner Component*/
 .insurance-banner {
     display: flex;
@@ -709,10 +595,11 @@ p a:hover {
 
 .tile__content {
     width: 50%;
+    padding: 10px;
 }
 
 .tile__title {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: bold;
     margin-bottom: 10px;
 }
@@ -723,7 +610,7 @@ p a:hover {
 }
 
 .tile__description {
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .tile__icon--shield {
