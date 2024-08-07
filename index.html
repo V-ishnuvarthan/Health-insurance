@@ -9,118 +9,321 @@
   </head>
   <body>
     <header>
-      <nav class="header__nav-wrapper">
-        <div class="header__nav-container-top">
-          <div class="header__nav-container-logo">
-            <div class="header__nav-logo">
-              <a href="#" class="header__nav-logo-link">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="82"
-                  height="40"
-                  fill="none"
-                  viewBox="0 0 82 40"
-                >
-                  <path
-                    fill="#FFD43D"
-                    d="M73.365 19.71c0 2.904-2.241 5.31-5.27 5.31-3.03 0-5.228-2.406-5.228-5.31 0-2.905 2.199-5.312 5.228-5.312s5.27 2.407 5.27 5.311Z"
-                  ></path>
-                  <path
-                    fill="#FF0C81"
-                    d="M48.764 19.544c0 2.946-2.323 5.145-5.27 5.145-2.904 0-5.227-2.2-5.227-5.145 0-2.947 2.323-5.104 5.228-5.104 2.946 0 5.27 2.158 5.27 5.104Z"
-                  ></path>
-                  <path
-                    fill="#11EEFC"
-                    d="M20.074 25.02c3.029 0 5.27-2.406 5.27-5.31 0-2.905-2.241-5.312-5.27-5.312-3.03 0-5.228 2.407-5.228 5.311 0 2.905 2.199 5.312 5.228 5.312Z"
-                  ></path>
-                  <path
-                    fill="#171A26"
-                    d="M68.095 30.54c-6.307 0-11.12-4.897-11.12-10.872 0-5.934 4.855-10.83 11.12-10.83 6.349 0 11.162 4.938 11.162 10.83 0 5.975-4.855 10.871-11.162 10.871Zm0-5.52c3.03 0 5.27-2.406 5.27-5.31 0-2.905-2.24-5.312-5.27-5.312-3.029 0-5.228 2.407-5.228 5.311 0 2.905 2.199 5.312 5.228 5.312ZM43.08 40c-4.813 0-8.506-2.116-10.373-5.934l4.896-2.655c.913 1.784 2.614 3.195 5.394 3.195 3.486 0 5.85-2.448 5.85-6.473v-.374c-1.12 1.411-3.111 2.49-6.016 2.49-5.768 0-10.373-4.481-10.373-10.581 0-5.934 4.813-10.788 11.12-10.788 6.431 0 11.162 4.605 11.162 10.788v8.299C54.74 35.27 49.76 40 43.08 40Zm.415-15.311c2.946 0 5.27-2.2 5.27-5.145 0-2.947-2.324-5.104-5.27-5.104-2.905 0-5.228 2.158-5.228 5.104s2.323 5.145 5.228 5.145ZM20.074 30.54c-6.307 0-11.12-4.897-11.12-10.872 0-5.934 4.854-10.83 11.12-10.83 6.348 0 11.162 4.938 11.162 10.83 0 5.975-4.855 10.871-11.162 10.871Zm0-5.52c3.029 0 5.27-2.406 5.27-5.31 0-2.905-2.241-5.312-5.27-5.312-3.03 0-5.228 2.407-5.228 5.311 0 2.905 2.199 5.312 5.228 5.312ZM0 0h5.892v30H0V0ZM82 6.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z"
-                  ></path>
-                </svg>
-              </a>
+        <nav class="header__nav-wrapper">
+          <div class="header__nav-container-top">
+            <div class="header__nav-container-logo">
+              <div class="header__nav-logo">
+                <a href="#" class="header__nav-logo-link">
+                <img class="header__nav-logo-img" src="resources/logo.webp" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="header__nav-menuwrapper">
+              <ul class="header__nav-megamenu">
+                <li class="header__nav-megamenu-label">
+                  <div class="megamenu-nav__link-wrapper">
+                    <a class="megamenu-nav__link" href="#">
+                      <span>Support</span>
+                    </a>
+                  </div>
+                </li>
+                <li class="header__nav-megamenu-label">
+                  <div class="megamenu-nav__link-wrapper">
+                    <a class="megamenu-nav__link" href="#">
+                      <span>Info Center</span>
+                    </a>
+                  </div>
+                </li>
+                <li class="header__nav-megamenu-label">
+                  <div class="megamenu-nav__link-wrapper">
+                    <a class="megamenu-nav__link" href="#">
+                      <span>Contact Us</span>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+              <div class="header__nav-megamenu-label-signIn signInlink">
+                <a href="#" class="megamenu-nav__link signupBtn">Sign In</a>
+              </div>
+              <div class="header__nav-menuwrapper-mobileHamburgerMenu">
+                <div class="hamburger-menu-icon">
+                  <div class="ham-container"><div class="ham"></div></div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="header__nav-menuwrapper">
-            <ul class="header__nav-megamenu">
-              <li
-                class="header__nav-megamenu-label"
-                onmouseover="showChildMenu(this)"
-                onmouseout="hideChildMenu(this)"
-              >
-                <div class="megamenu-nav__link-wrapper">
-                  <a class="megamenu-nav__link" href="#">
-                    <span>Term Insurance</span>
-                  </a>
-                </div>
+          <div class="header__nav-container-bottom">
+            <ul class="header__nav-container-bottom-wrapper">
+              <li class="header__nav-container-bottomMegamenu-label">
+                <button class="header__nav-container-bottomMegamenu__link">
+                  Term Insurance
+                  <span
+                    ><svg
+                      enable-background="new 0 0 48 48"
+                      height="14px"
+                      id="Layer_1"
+                      version="1.1"
+                      viewBox="0 0 48 48"
+                      width="14px"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <g id="Layer_4">
+                        <polygon
+                          fill="#241F20"
+                          points="47.993,14.121 45.872,12 45.863,12.009 43.752,9.896 24.008,29.641 4.248,9.881 0.007,14.125    0.013,14.13 0.009,14.134 21.679,35.803 21.664,35.816 23.967,38.119 23.98,38.105 23.994,38.119 25.021,37.093 25.029,37.104    47.993,14.141 47.982,14.131  "
+                        ></polygon>
+                      </g></svg>
+                    </span>
+                </button>
                 <ul class="header__nav-submenu">
                   <li>
                     <a href="#" class="header__nav-submenu-label">
-                      <span>Term Insurance Plan1</span>
+                      <span>Term Insurance Plan</span>
                     </a>
                   </li>
                   <li>
                     <a href="#" class="header__nav-submenu-label">
-                      <span>Term Insurance Plan2</span>
+                      <span>Life Insurance</span>
                     </a>
                   </li>
                   <li>
                     <a href="#" class="header__nav-submenu-label">
-                      <span>Term Insurance Plan3</span>
+                      <span>Term Insurance for NRI</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="header__nav-submenu-label">
+                      <span>Term Insurance for NRI</span>
                     </a>
                   </li>
                 </ul>
               </li>
-              <li class="header__nav-megamenu-label">
-                <div class="megamenu-nav__link-wrapper">
-                  <a class="megamenu-nav__link" href="#">
-                    <span>Term Insurance1</span>
-                  </a>
-                </div>
+              <li class="header__nav-container-bottomMegamenu-label">
+                <button class="header__nav-container-bottomMegamenu__link">
+                  Investment Plans
+                  <span
+                    ><svg
+                      enable-background="new 0 0 48 48"
+                      height="14px"
+                      id="Layer_1"
+                      version="1.1"
+                      viewBox="0 0 48 48"
+                      width="14px"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <g id="Layer_4">
+                        <polygon
+                          fill="#241F20"
+                          points="47.993,14.121 45.872,12 45.863,12.009 43.752,9.896 24.008,29.641 4.248,9.881 0.007,14.125    0.013,14.13 0.009,14.134 21.679,35.803 21.664,35.816 23.967,38.119 23.98,38.105 23.994,38.119 25.021,37.093 25.029,37.104    47.993,14.141 47.982,14.131  "
+                        ></polygon>
+                      </g></svg>
+                    </span>
+                </button>
+                <ul class="header__nav-submenu">
+                  <li>
+                    <a href="#" class="header__nav-submenu-label">
+                      <span>Annuity Plans</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="header__nav-submenu-label">
+                      <span>Money Back Policy</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="header__nav-submenu-label">
+                      <span>Endowment Policy</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="header__nav-submenu-label">
+                      <span>Guaranteed Return Plans</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="header__nav-submenu-label">
+                      <span>Capital Guarantee Plans</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="header__nav-submenu-label">
+                      <span>Investment Plans with High Returns</span>
+                    </a>
+                  </li>
+                </ul>
               </li>
-              <li class="header__nav-megamenu-label">
-                <div class="megamenu-nav__link-wrapper">
-                  <a class="megamenu-nav__link" href="#">
-                    <span>Term Insurance2</span>
-                  </a>
-                </div>
+              <li class="header__nav-container-bottomMegamenu-label">
+                <button class="header__nav-container-bottomMegamenu__link">
+                  Health Insurance<span
+                    ><svg
+                      enable-background="new 0 0 48 48"
+                      height="14px"
+                      id="Layer_1"
+                      version="1.1"
+                      viewBox="0 0 48 48"
+                      width="14px"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <g id="Layer_4">
+                        <polygon
+                          fill="#241F20"
+                          points="47.993,14.121 45.872,12 45.863,12.009 43.752,9.896 24.008,29.641 4.248,9.881 0.007,14.125    0.013,14.13 0.009,14.134 21.679,35.803 21.664,35.816 23.967,38.119 23.98,38.105 23.994,38.119 25.021,37.093 25.029,37.104    47.993,14.141 47.982,14.131  "
+                        ></polygon>
+                      </g></svg>
+                    </span>
+                </button>
+                <ul class="header__nav-submenu">
+                  <li>
+                    <a href="#" class="header__nav-submenu-label">
+                      <span>Family Health Insurance</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="header__nav-submenu-label">
+                      <span>Senior Citizen Health Insurance</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="header__nav-submenu-label">
+                      <span>Health Insurance for Parents</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="header__nav-submenu-label">
+                      <span>Best Health Insurance Plans</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="header__nav-submenu-label">
+                      <span>Health Insurance Portability</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="header__nav-submenu-label">
+                      <span>OPD Cover In Health Insurance</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header__nav-container-bottomMegamenu-label">
+                <button class="header__nav-container-bottomMegamenu__link">
+                  Other Insurance<span
+                    ><svg
+                      enable-background="new 0 0 48 48"
+                      height="14px"
+                      id="Layer_1"
+                      version="1.1"
+                      viewBox="0 0 48 48"
+                      width="14px"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <g id="Layer_4">
+                        <polygon
+                          fill="#241F20"
+                          points="47.993,14.121 45.872,12 45.863,12.009 43.752,9.896 24.008,29.641 4.248,9.881 0.007,14.125    0.013,14.13 0.009,14.134 21.679,35.803 21.664,35.816 23.967,38.119 23.98,38.105 23.994,38.119 25.021,37.093 25.029,37.104    47.993,14.141 47.982,14.131  "
+                        ></polygon>
+                      </g></svg>
+                    </span>
+                </button>
+                <ul class="header__nav-submenu">
+                  <li>
+                    <a href="#" class="header__nav-submenu-label">
+                      <span>Travel Insurance</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="header__nav-submenu-label">
+                      <span>Home Insurance</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="header__nav-submenu-label">
+                      <span>Business Insurance</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="header__nav-submenu-label">
+                      <span>Transit Insurance</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="header__nav-submenu-label">
+                      <span>CPM Insurance</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="header__nav-submenu-label">
+                      <span>Shopkeeper Insurance</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header__nav-container-bottomMegamenu-label">
+                <button class="header__nav-container-bottomMegamenu__link">
+                  Business Insurance<span
+                    ><svg
+                      enable-background="new 0 0 48 48"
+                      height="14px"
+                      id="Layer_1"
+                      version="1.1"
+                      viewBox="0 0 48 48"
+                      width="14px"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <g id="Layer_4">
+                        <polygon
+                          fill="#241F20"
+                          points="47.993,14.121 45.872,12 45.863,12.009 43.752,9.896 24.008,29.641 4.248,9.881 0.007,14.125    0.013,14.13 0.009,14.134 21.679,35.803 21.664,35.816 23.967,38.119 23.98,38.105 23.994,38.119 25.021,37.093 25.029,37.104    47.993,14.141 47.982,14.131  "
+                        ></polygon>
+                      </g></svg>
+                    </span>
+                </button>
+                <ul class="header__nav-submenu">
+                  <li>
+                    <a href="#" class="header__nav-submenu-label">
+                      <span>Group Health Insurance</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="header__nav-submenu-label">
+                      <span>Group Insurance</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="header__nav-submenu-label">
+                      <span>Fire Insurance</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="header__nav-submenu-label">
+                      <span>Marine Insurance</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="header__nav-submenu-label">
+                      <span>Workers Compensation</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="header__nav-submenu-label">
+                      <span>Labour Insurance</span>
+                    </a>
+                  </li>
+                </ul>
               </li>
             </ul>
-            <div class="header__nav-megamenu-label-signIn signInlink">
-              <a href="#" class="megamenu-nav__link signupBtn">Sign In</a>
-            </div>
           </div>
-        </div>
-        <div class="header__nav-container-bottom">
-          <ul class="header__nav-container-bottom-wrapper">
-            <li class="header__nav-container-bottomMegamenu-label">
-              <a href="" class="header__nav-container-bottomMegamenu__link"
-                >Properties</a
-              >
-            </li>
-            <li class="header__nav-container-bottomMegamenu-label">
-              <a href="" class="header__nav-container-bottomMegamenu__link"
-                >Properties</a
-              >
-            </li>
-            <li class="header__nav-container-bottomMegamenu-label">
-              <a href="" class="header__nav-container-bottomMegamenu__link"
-                >Properties</a
-              >
-            </li>
-            <li class="header__nav-container-bottomMegamenu-label">
-              <a href="" class="header__nav-container-bottomMegamenu__link"
-                >Properties</a
-              >
-            </li>
-            <li class="header__nav-container-bottomMegamenu-label">
-              <a href="" class="header__nav-container-bottomMegamenu__link"
-                >Properties</a
-              >
-            </li>
-          </ul>
-        </div>
-      </nav>
+        </nav>
     </header>
     <main>
       <div class="modal">
@@ -208,21 +411,22 @@
           <p class="form__login">Already have an account? <a href="#" class="form__login-link">Login Now</a></p>
         </form>
       </div>
-      <div class="insurance-banner">
-        <div class="insurance-banner__content">
-          <h2 class="insurance-banner__title">Let's find you <br> the <strong>Best Insurance</strong></h2>
-          <div class="insurance-banner__subtitle">
-          <p class="insurance-banner__subtitle--blue">50+ insurers with one of the best prices</p>
-          <p class="insurance-banner__subtitle--orange" style="color: orange;">Quick, easy &amp; <br>hassle-free</p>
-        </div>
-        </div>
-        <div class="insurance-banner__plan">
-          <div class="insurance-banner__plan-content">
-            <h3 class="insurance-banner__plan-title">$1 Core</h3>
-            <p class="insurance-banner__plan-price">Term plan starting <br> @ ₹479/month</p>
-            <a href="#" class="insurance-banner__plan-button">view plans</a>
+      <div class="customer-section">
+        <h2 class="customer-section__title">Why our customers love us?</h2>
+        <p class="customer-section__subtitle">And, we think you will too.</p>
+        <div class="customer-section__features">
+          <div class="feature feature--providers">
+            <h2 class="feature__description">9500+ Healthcare providers</h2>
+            <p class="feature__detail">for a hassle-free service.</p>
           </div>
-          <div class="insurance-banner__plan-image"></div>
+          <div class="feature feature--claim">
+            <h2 class="feature__description">Quick claim intimation</h2>
+            <p class="feature__detail">through our Toll-free Care.</p>
+          </div>
+          <div class="feature feature--support">
+            <h2 class="feature__description">24x7 customer support</h2>
+            <p class="feature__detail">Call Centre - Chat - Email - Branches.</p>
+          </div>
         </div>
       </div>
       <div class="tiles">
@@ -249,7 +453,34 @@
             <p class="tile__description">Drop a message and we will help you quickly.</p>
           </div>
         </div>
-      </div>
+      </div>      
+      <div class="benefits">
+        <h1 class="benefits__title">What are the benefits of buying a health insurance policy?</h1>
+        <p class="benefits__subtitle">A comprehensive health insurance plan in India comes with many advantages.</p>
+        <div class="benefits__list">
+            <div class="benefit-item">
+                <span class="benefit-item__number">1</span>
+                <div class="benefit-item__content">             
+                  <h2 class="benefit-item__title">Covers complete OPD requirements</h2>
+                  <p class="benefit-item__description">ICICI Lombard's Befit plan is tailored to cover the expenses of all your minor and severe health concerns, including teleconsultation with the doctor, pharmacy, and routine diagnostics on a cashless basis.</p>
+                </div>  
+            </div>
+            <div class="benefit-item">
+                <span class="benefit-item__number">2</span>
+                <div class="benefit-item__content">  
+                <h2 class="benefit-item__title">Covers pre and post hospitalisation</h2>
+                <p class="benefit-item__description">One of the key benefits of a health insurance policy is that it covers your medical expenses incurred just before and after hospitalisation.</p>
+                </div>  
+              </div>
+            <div class="benefit-item">
+                <span class="benefit-item__number">3</span>
+                <div class="benefit-item__content">  
+                <h2 class="benefit-item__title">Covers pre-existing diseases</h2>
+                <p class="benefit-item__description">A health plan covers you for a pre-existing disease once you have completed the waiting period mentioned in the policy certificate.</p>
+                </div>
+            </div>
+        </div>
+      </div>    
       <!-- Block component -->
       <div class="pb-advantage">
         <!-- Element: title -->
@@ -265,21 +496,21 @@
           <div class="pb-advantage__service-item">
             <h3 class="pb-advantage__service-title">One of the best Prices</h3>
             <p class="pb-advantage__service-description">Guaranteed</p>
-            <div class="pb-advantage__service-icon pb-advantage__service-icon--prices"></div>
+            <img src="resources/FI_Insurance_claim.png" class="pb-advantage__service-icon">
             <a href="#" class="pb-advantage__service-button">view plans</a>
           </div>
 
           <div class="pb-advantage__service-item">
             <h3 class="pb-advantage__service-title">Unbiased Advice</h3>
             <p class="pb-advantage__service-description">Keeping customers first</p>
-            <div class="pb-advantage__service-icon pb-advantage__service-icon--advice"></div>
+            <img src="resources/FI_Products.png" class="pb-advantage__service-icon">
             <a href="#" class="pb-advantage__service-button">view plans</a>
           </div>
 
           <div class="pb-advantage__service-item">
             <h3 class="pb-advantage__service-title">100% Reliable</h3>
             <p class="pb-advantage__service-description">Regulated by IRDAI</p>
-            <div class="pb-advantage__service-icon pb-advantage__service-icon--reliable"></div>
+            <img src="resources/FI_Advisory.png" class="pb-advantage__service-icon">
             <a href="#" class="pb-advantage__service-button">view plans</a>
           </div>
 <!-- 

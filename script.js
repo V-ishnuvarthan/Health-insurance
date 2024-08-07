@@ -8,6 +8,42 @@ function hideChildMenu(X) {
     ele.classList.remove("showChildMenu");
 }
 
+document.addEventListener("DOMContentLoaded", function (event) {
+    var ele = document.querySelectorAll(
+      ".header__nav-container-bottomMegamenu__link"
+    );
+    ele.forEach(function (item, index) {
+      item.addEventListener("click", function (e) {
+        if (this.classList.contains("active")) {
+          this.classList.remove("active");
+        } else {
+          var elems = document.querySelector(".active");
+          if (elems !== null) {
+            elems.classList.remove("active");
+          }
+          this.classList.add("active");
+        }
+      });
+    });
+
+    var hamButton = document.querySelector(".hamburger-menu-icon");
+
+    hamButton.addEventListener("click", function () {
+      var ele = document.querySelector(".ham");
+      if (ele.classList.contains("hamburger__icon--open")) {
+        ele.classList.remove("hamburger__icon--open");
+        document.querySelector(
+          ".header__nav-container-bottom"
+        ).style.display = "none";
+      } else {
+        ele.classList.add("hamburger__icon--open");
+        document.querySelector(
+          ".header__nav-container-bottom"
+        ).style.display = "block";
+      }
+    });
+  });
+
 // Get the modal
 var modal = document.querySelector('.modal');
 var btn = document.querySelector('.signupBtn');
