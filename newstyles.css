@@ -10,7 +10,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 12%;
+    margin-top: 20%;
 }
 
 p {
@@ -622,8 +622,10 @@ button {
 }
 
 .customer-section__title {
-    font-size: 30px;
+    text-align: center;
+    font-size: 24px;
     margin-bottom: 10px;
+    /* width: 430px; */
 }
 
 .customer-section__subtitle {
@@ -634,11 +636,12 @@ button {
 .customer-section__features {
     padding-top: 10px;
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
 }
 
 .feature {
-    width: 30%;
+    width: 60%;
     padding: 0px 80px 20px 80px;
     text-align: center;
 }
@@ -672,11 +675,12 @@ button {
 
 .benefits__list {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
 }
 
 .benefit-item {
-    width: 30%;
+    width: 100%;
     text-align: center;
     display: flex;
 }
@@ -690,6 +694,7 @@ button {
 
 .benefit-item__content {
     text-align: left;
+    width: 100%;
 }
 
 .benefit-item__title {
@@ -702,6 +707,7 @@ button {
 /*Tiles Component*/
 .tiles {
     display: flex;
+    flex-direction: column;
     gap: 20px;
     padding: 40px 20px;
     background: #f2f7ff;
@@ -774,7 +780,7 @@ button {
 }
 
 .pb-advantage__description {
-    width: 50%;
+    width: 100%;
     text-align: left;
     font-size: 16px;
     margin-bottom: 27px;
@@ -845,12 +851,14 @@ button {
 /* Card component*/
 .cards {
     display: flex;
+    flex-direction: column;
     gap: 20px;
     padding: 40px 20px;
     background: #f2f7ff;
 }
 
 .card {
+    /* height: 443px; */
     border-radius: 20px;
     padding: 20px;
     color: #fff;
@@ -927,6 +935,7 @@ button {
 
 .testimonials__container {
     display: flex;
+    flex-direction: column;
     gap: 20px;
     justify-content: center;
 }
