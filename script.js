@@ -1,12 +1,12 @@
-// function showChildMenu(X) {
-//     const ele = X.querySelector(".header__nav-submenu");
-//     ele.classList.add("showChildMenu");
-// }
+function showChildMenu(X) {
+    const ele = X.querySelector(".header__nav-submenu");
+    ele.classList.add("showChildMenu");
+}
 
-// function hideChildMenu(X) {
-//     const ele = X.querySelector(".header__nav-submenu");
-//     ele.classList.remove("showChildMenu");
-// }
+function hideChildMenu(X) {
+    const ele = X.querySelector(".header__nav-submenu");
+    ele.classList.remove("showChildMenu");
+}
 
 document.addEventListener("DOMContentLoaded", function (event) {
     var ele = document.querySelectorAll(
